@@ -1,19 +1,18 @@
+"use strict";
+const btnClickPlusOne = document.querySelector('.btn_1'),
+      btnClickPlusTen = document.querySelector('.btn_2'),
+      textClick = document.querySelector('.text_1');
 
-let btnClick = document.querySelector('.btn_1'),
-    btnClickPlusTen = document.querySelector('.btn_2'),
-    textClick = document.querySelector('.text_1'),
-    textClickPlusTen = document.querySelector('.text_2');
+function ClickBtnPlusOne() {
+     let sum = textClick.textContent;
+     textClick.textContent = +sum + 1;
+     console.log(sum);
+};
+function ClickBtnPlusTen() {
+     let sum = textClick.textContent;
+     textClick.textContent = +sum + 10;
+     console.log(sum);
+};
 
-btnClick.addEventListener('click', function() {
-     
-     let sum = event.target.value++;
-     textClick.textContent = `${sum}`;
-});
-
-console.log(textClick);
-
-
-btnClickPlusTen.addEventListener('click', function() {
-     let sum = +textClick.textContent + 10;
-     textClickPlusTen.textContent = `${sum}`;
-});
+btnClickPlusOne.addEventListener('click', ClickBtnPlusOne);
+btnClickPlusTen.addEventListener('click', ClickBtnPlusTen);
