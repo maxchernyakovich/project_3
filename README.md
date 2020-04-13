@@ -2,4 +2,4 @@
 qwest
 
 
-[project_3](https://maxchernyakovich.github.io/project_3/src/index.html "сайт") - ссылка
+[project_3](https://maxchernyakovich.github.io/value_btn1-value_btn2/src/index.html "сайт") - ссылка
